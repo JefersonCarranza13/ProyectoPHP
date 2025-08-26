@@ -65,11 +65,15 @@ body{
 #content{
     margin: 0px auto;
     background: gray;
+<<<<<<< HEAD
     overflow:  hidden;
+=======
+>>>>>>> 022345dce8281d06b5930d868734f0d5a8c197ef
 
 } 
    /* Barra lateral  */
 #lateral{
+<<<<<<< HEAD
     width: 17%;
     min-height: 650px;
     float: left;
@@ -103,4 +107,12 @@ body{
     border: 1px solid maroon;
     float: right;
     border: 1px solid lightcyan;
+=======
+    width: 20%;
+    border: 1px solid rebeccapurple 
+}
+#central{
+    width: 80%;
+    border: 1px solid maroon
+>>>>>>> 022345dce8281d06b5930d868734f0d5a8c197ef
 }
