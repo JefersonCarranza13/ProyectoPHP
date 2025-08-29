@@ -71,7 +71,11 @@ body{
    /* Barra lateral  */
 #lateral{
     width: 17%;
+<<<<<<< HEAD
     min-height: 600px;
+=======
+    min-height: 650px;
+>>>>>>> a764579f18bc9e30be581970e86904ea8b261a3e
     float: left;
     margin-top: 20px;
     margin-left: 10px;
@@ -176,6 +180,7 @@ input[type="button"],
 }
 .product a:hover{
     color: lightcyan;
+<<<<<<< HEAD
 }
 #footer{
     text-align: center;
@@ -184,4 +189,6 @@ input[type="button"],
     background: black;
     color:white;
     border-top: 5px solid #01b1ea;
+=======
+>>>>>>> a764579f18bc9e30be581970e86904ea8b261a3e
 }
