@@ -41,3 +41,28 @@ CREATE TABLE IF NOT EXISTS t_producto(
     CONSTRAINT  fk_categoria    FOREIGN KEY(id_categoria) references t_categorias(id_categoria)    
     
 )ENGINE=InnoDb; 
+
+CREATE TABLE IF NOT EXISTS t_pedidos(
+    id_pedido             int(11)     auto_increment    NOT NULL, 
+    id_usuario            int(11)                       NOT NULL,
+    fecha                 date                          NOT NULL,
+    hora                  time                          NOT NULL,
+    ciudad                varchar(100)                  NOT NULL,
+    direccion             varchar(200)                  NOT NULL,
+    costo                 float(10,2)                   NOT NULL,
+    estado                varchar (20)                  NOT NULL,
+    CONSTRAINT pk_pedido        Primary key(id_pedido),
+    CONSTRAINT fk_pedido_usuario FOREIGN key(id_usuario) references t_usuarios(id_usuario)
+
+)ENGINE=InnoDb;
+
+CREATE TABLE if NOT EXISTS t_detallepedido(
+    id_detallepedido       int(11) auto_increment      NOT NULL,
+    id_pedido               int(11)                     NOT NULL,
+    id_producto             int(11)                     NOT NULL,
+    unidades                int(100)                    NOT NULL,
+
+    CONSTRAINT pk_detallepedido      Primary key(id_detallepedido),
+    CONSTRAINT fk_detallepedido_pedido FOREIGN key(id_pedido) references t_pedidos(id_pedido),
+    CONSTRAINT fk_detallepedido_producto FOREIGN key(id_producto) references t_producto(id_producto)
+)ENGINE=InnoDb;
