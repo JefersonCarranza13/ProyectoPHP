@@ -4,9 +4,11 @@ require_once 'config/database.php';
 class Usuario {
 
     public $db;
-    public function __construct(){
-        $this->db =database::conectar();
-    }
+    public function _construct(){
+
+        $this->db =Database::conectar() ;
+    
+}
     public $idusuario;
     public $nombre;
     public $apellido;
@@ -56,5 +58,12 @@ class Usuario {
     }   
     function setimagen($imagen){
         $this->imagen = $imagen;
-    }   
+    }  
+
+public function conseguirTodos(){
+    
+    echo "imprimiendo todos los usuarios...";
+    
+
+}
 }
