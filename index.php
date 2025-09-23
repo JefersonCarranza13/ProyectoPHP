@@ -8,3 +8,6 @@
         $controlador = new UsuarioController();
 
         $controlador->MostrarTodos();
+
+        $controlador->crear();
+        

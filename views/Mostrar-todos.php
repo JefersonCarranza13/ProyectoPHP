@@ -1,4 +1,4 @@
-<h1><?=$imprimiendo_todos_los_usuarios?></h1>
+<h1><?=$todos_los_usuarios?></h1>
 
 <!-- como ocurre
 1) en el controlador llamamos al modelo

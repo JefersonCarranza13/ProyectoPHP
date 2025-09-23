@@ -59,11 +59,17 @@ class Usuario {
     function setimagen($imagen){
         $this->imagen = $imagen;
     }  
-
+  //metodo que consulten cosas a la bdats
 public function conseguirTodos(){
     
     echo "imprimiendo todos los usuarios...";
+}
+
+    public function crear(  ){
+        
+        echo "Crear Usuarios...";
+    }
     
 
-}
+
 }
